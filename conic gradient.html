@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            animation-name: circle;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            background-color: brown;
+            background-image: repeating-conic-gradient(violet 0deg, indigo 10deg, blue 20deg, green 30deg, yellow 40deg, orange 50deg, red 60deg);
+        }
+
+        div {
+            position: absolute;
+            left: 90px;
+            top: 60px;
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            
+        }
+        @keyframes circle {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .stick{
+            position: absolute;
+            left: 150px;
+            top: 120px;
+            background-color: brown;
+            height: 150px;
+            width: 5px;
+            transform: rotate(-10deg);
+        }
+    </style>
+
+<body>
+    <div id="grad1"></div>
+    <img src="./cycle image22.gif" width="500" height="600">
+    <div1 class="stick"></div>
+</body>
+</head>
+
+</html>
